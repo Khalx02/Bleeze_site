@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bleeze Limited</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+    <div class="logo">Bleeze Limited</div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tracking">Tracking</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>Fast & Reliable Logistics</h1>
+        <p>We deliver packages safely across cities and borders with speed and care.</p>
+        <button onclick="alert('Tracking coming soon!')">Track Shipment</button>
+    </div>
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<p>
+Bleeze Limited is a modern logistics company dedicated to providing fast, secure,
+and affordable delivery services. We specialize in cargo transportation, express
+deliveries, and supply chain solutions for individuals and businesses.
+</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="services">
+    <div class="card">🚚 Local Delivery</div>
+    <div class="card">✈ International Shipping</div>
+    <div class="card">📦 Warehousing</div>
+    <div class="card">🏢 Business Logistics</div>
+    <div class="card">🚛 Truck Sales</div>
+</div>
+
+</section>
+
+<section id="tracking">
+<h2>Shipment Tracking</h2>
+
+<input id="trackingId" placeholder="Enter Tracking Number"
+style="padding:10px;width:250px;max-width:100%;">
+
+<br><br>
+
+<button onclick="trackShipment()">Track</button>
+
+<p id="result" style="margin-top:20px;font-weight:bold;"></p>
+</section>
+
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: bleezeltd.com</p>
+<p>Phone: +234 800 000 0000</p>
+</section>
+
+<footer>
+© 2026 Bleeze Limited. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
