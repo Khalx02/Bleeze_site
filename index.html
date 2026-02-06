@@ -44,6 +44,45 @@ deliveries, and supply chain solutions for individuals and businesses.
 </p>
 </section>
 
+<section id="quote">
+    <h2>Get an Instant Quote</h2>
+    <div class="quote-container">
+        <input type="text" id="origin" placeholder="Origin (City/Zip)">
+        <input type="text" id="destination" placeholder="Destination (City/Zip)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <select id="cargoType">
+            <option value="standard">Standard</option>
+            <option value="fragile">Fragile (+20%)</option>
+            <option value="perishable">Perishable (+50%)</option>
+        </select>
+        <button onclick="calculateQuote()">Calculate Price</button>
+        <div id="quoteResult" style="margin-top:15px; font-size: 1.2rem; color: #0a3d62;"></div>
+    </div>
+</section>
+
+<section id="portal">
+    <h2>Client Dashboard</h2>
+    <div id="login-form">
+        <p>Access your invoices and history.</p>
+        <input type="email" id="email" placeholder="Email Address" style="display:block; margin:10px 0; padding:10px;">
+        <input type="password" id="pass" placeholder="Password" style="display:block; margin:10px 0; padding:10px;">
+        <button onclick="handleLogin()">Login to Dashboard</button>
+    </div>
+    
+    <div id="dashboard" style="display:none;">
+        <h3>Welcome back, Valued Client!</h3>
+        <div class="services">
+            <div class="card">📄 <strong>Recent Invoices</strong><br>#INV-004 - Pending</div>
+            <div class="card">🕒 <strong>History</strong><br>12 Shipments Completed</div>
+            <div class="card" style="background: #fff3e0; border: 1px solid orange;">
+                ➕ <strong>Quick Action</strong><br>
+                <button onclick="alert('Pickup Scheduled!')" style="padding:5px 10px;">Schedule New Pickup</button>
+            </div>
+        </div>
+        <button onclick="location.reload()" style="background:#666;">Logout</button>
+    </div>
+</section>
+
 <section id="services">
 <h2>Our Services</h2>
 
@@ -73,7 +112,7 @@ style="padding:10px;width:250px;max-width:100%;">
 
 <section id="contact">
 <h2>Contact Us</h2>
-<p>Email: bleezeltd.com</p>
+<p>Email: bleezeltd.outlook.com</p>
 <p>Phone: +234 800 000 0000</p>
 </section>
 

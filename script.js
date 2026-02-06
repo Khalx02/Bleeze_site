@@ -34,3 +34,37 @@ function trackShipment(){
         result.innerHTML = "Tracking number not found";
     }
 }
+// Quote Calculation Logic
+function calculateQuote() {
+    const weight = document.getElementById("weight").value;
+    const type = document.getElementById("cargoType").value;
+    const resultDiv = document.getElementById("quoteResult");
+
+    if (!weight || weight <= 0) {
+        resultDiv.innerHTML = "Please enter a valid weight.";
+        return;
+    }
+
+    // Base rate: $10 per kg (example)
+    let basePrice = weight * 10;
+
+    // Apply multipliers based on cargo type
+    if (type === "fragile") basePrice *= 1.2;
+    if (type === "perishable") basePrice *= 1.5;
+
+    resultDiv.innerHTML = `Estimated Cost: <strong>$${basePrice.toFixed(2)}</strong><br><small>Final price may vary after inspection.</small>`;
+}
+
+// Simple Login Simulation
+function handleLogin() {
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("pass").value;
+
+    if (email && pass) {
+        // Hide login form, show dashboard
+        document.getElementById("login-form").style.display = "none";
+        document.getElementById("dashboard").style.display = "block";
+    } else {
+        alert("Please enter both email and password");
+    }
+}

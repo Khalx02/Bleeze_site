@@ -136,3 +136,22 @@ footer {
     display: none;
     font-size: 22px;
 }
+.quote-container input, .quote-container select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#portal input {
+    width: 300px;
+    max-width: 100%;
+}
+
+#dashboard {
+    background: #f9f9f9;
+    padding: 20px;
+    border-top: 4px solid #0a3d62;
+    margin-top: 20px;
+}
